@@ -1,5 +1,9 @@
 <h1>Motivational Quotes</h1>
-<div *ngFor='let qt of quotes'>
-    <p>Quote: {{ qt.quote }}</p>
+<div *ngFor='let qt of quotes; let i=index'>
+    <p *ngIf="highestUpvote()===qt.upvotes && qt.upvotes>0">Quote: {{ qt.quote }}</p>
+    <p *ngIf="highestUpvote()!==qt.upvotes || qt.upvotes===0">Quote: {{ qt.quote }}</p>
     <app-detail  [quote]='qt'></app-detail>
+    <button class="btn btn-info" (click)="upvote(i)">Upvote </button>
+    <button class="btn btn-info" (click)="downvote(i)">Downvote </button>
+    <button class="btn btn-danger" (click)="delQuote(i)">Delete</button>
 </div>
