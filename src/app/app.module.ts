@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { QuotesComponent } from './quotes/quotes.component';
 import { DetailComponent } from './detail/detail.component';
+import { DateCountPipe } from './date-count.pipe';
 
 
 @NgModule({
@@ -12,6 +13,7 @@ import { DetailComponent } from './detail/detail.component';
     AppComponent,
     QuotesComponent,
     DetailComponent,
+    DateCountPipe,
 
   ],
   imports: [
