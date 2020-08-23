@@ -14,6 +14,9 @@ export class QuotesComponent implements OnInit {
     new Quotes('You can never plan the future by the past', 'Edmund Burke', 'John Karima')
   ]
 
+  addQuote(chosenQuote) {
+    this.quotes.push(chosenQuote)
+  }
   upvote(i){
     this.quotes[i].upvotes ++;
   }
