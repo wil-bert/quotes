@@ -1,4 +1,5 @@
 <div>
     <h1>Motivational Quotes</h1>
-    <p *ngFor='let quotes of quotes'>{{ quotes.author }}</p>
+    <p *ngFor='let quotes of quotes'>Quote:{{ quotes.quote }}</p>
+    <app-detail [quotes]='quotes'></app-detail>
 </div>

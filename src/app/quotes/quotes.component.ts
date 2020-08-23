@@ -10,8 +10,8 @@ import { Quotes } from '../quotes';
 })
 export class QuotesComponent implements OnInit {
   quotes : Quotes[] = [
-    {quote:'WOnders of the world',author:'john',person:'ian' }
-  ]
+    {quote:'Wonders of the world',author:'john',person:'ian' }
+  ];
 
 
   constructor() { }
