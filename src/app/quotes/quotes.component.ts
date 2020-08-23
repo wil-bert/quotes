@@ -10,7 +10,8 @@ import { Quotes } from '../quotes';
 })
 export class QuotesComponent implements OnInit {
   quotes = [
-    new Quotes('Wonders of the world','john','ian')
+    new Quotes('Nobody can make you feel inferior without your permission','Eleanor Roosevelt','Ian Wilbert'),
+    new Quotes('You can never plan the future by the past', 'Edmund Burke', 'John Karima')
   ]
 
   upvote(i){
