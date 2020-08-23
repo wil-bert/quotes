@@ -1,12 +1,22 @@
-<h1>Motivational Quotes</h1>
-<div *ngFor='let qt of quotes; let i=index'>
-    <p appHighlight *ngIf="highestUpvote()===qt.upvotes && qt.upvotes>0">Quote: {{ qt.quote }}</p>
-    <p *ngIf="highestUpvote()!==qt.upvotes || qt.upvotes===0">Quote: {{ qt.quote }}</p>
-    <app-detail  [quote]='qt'></app-detail>
-    <button class="btn btn-info" (click)="upvote(i)">Upvote </button>
-    <button class="btn btn-info" (click)="downvote(i)">Downvote </button>
-    <button class="btn btn-danger" (click)="delQuote(i)">Delete</button><br>
+<div class="overlay">
+<h1>MOTIVATIONAL QUOTES</h1>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="all-cards">
+            <div *ngFor='let qt of quotes; let i=index'>
+                <div class="card-body">
+                <p appHighlight *ngIf="highestUpvote()===qt.upvotes && qt.upvotes>0">Quote: {{ qt.quote }}</p>
+                <p *ngIf="highestUpvote()!==qt.upvotes || qt.upvotes===0">Quote: {{ qt.quote }}</p>
+                <app-detail  [quote]='qt'></app-detail>
+                <button class="btn btn-info" (click)="upvote(i)">Upvote </button>
+                <button class="btn btn-info" (click)="downvote(i)">Downvote </button>
+                <button class="btn btn-danger" (click)="delQuote(i)">Delete</button><br>
+                </div>
+            </div>
+            </div>
+        </div>
+    <div>
+        <app-form (emitQuote)="addQuote($event)"></app-form>
 </div>
-<div>
-    <app-form (emitQuote)="addQuote($event)"></app-form>
 </div>
