@@ -1,5 +1,5 @@
-<div>
-    <h1>Motivational Quotes</h1>
-    <p *ngFor='let quotes of quotes'>Quote:{{ quotes.quote }}</p>
-    <app-detail [quotes]='quotes'></app-detail>
+<h1>Motivational Quotes</h1>
+<div *ngFor='let qt of quotes'>
+    <p>Quote: {{ qt.quote }}</p>
+    <app-detail  [quote]='qt'></app-detail>
 </div>

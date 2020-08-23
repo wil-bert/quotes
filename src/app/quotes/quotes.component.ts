@@ -9,8 +9,8 @@ import { Quotes } from '../quotes';
   styleUrls: ['./quotes.component.css']
 })
 export class QuotesComponent implements OnInit {
-  quotes : Quotes[] = [
-    {quote:'Wonders of the world',author:'john',person:'ian' }
+  quotes = [
+    new Quotes('Wonders of the world','john','ian')
   ];
 
 

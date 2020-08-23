@@ -1,5 +1,9 @@
 export class Quotes {
-    quote:string;
-    author:string;
-    person:string
+    public upvotes: number
+    public downvotes: number
+    public completeDate: Date
+    constructor (public quote:string, public author:string, public person:string){
+
+    }
+
 }
