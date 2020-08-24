@@ -1,4 +1,4 @@
-<form (ngSubmit)="submitQuote()">
+<form (ngSubmit)="submitQuote()" >
     <h1>Add Quote</h1>
 
     <div  class="md-form">
@@ -10,10 +10,10 @@
         <label for="">Author</label>
         <input type="text" name="author" [(ngModel)]="quoteAuthor">
     </div>
-    <div  class="md-form">
+    <div  class="md-form" >
         <label for="">Person</label>
         <input type="text" name="person" [(ngModel)]="quoteWords">
     </div>
 
-    <button type="submit">Post Quote</button>
+    <button class="btn btn-danger" type="submit">Post Quote</button>
 </form>
