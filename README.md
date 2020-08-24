@@ -19,7 +19,7 @@ Ian Wilbert
 * Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
 ## Live link
-[]
+[ https://wil-bert.github.io/quotes/]
 
 ## License
 MIT License [https://choosealicense.com/licenses/mit/]
